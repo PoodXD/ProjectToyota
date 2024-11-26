@@ -1,0 +1,285 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="Images/logo/logo.png">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<script src="bootstrap/jquery.min.js"></script>
+	<script src="bootstrap/bootstrap2.min.js"></script>
+	<link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/fontawesome.css">
+	<link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/solid.css">
+	<link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/brands.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/employee.css">
+	<script src="javascript/payroll.js"></script>
+	<title>Toyota - Employees</title>
+</head>
+<body>
+	<div id="header">
+		<div id="header-logo">
+			<a href="index.html">
+				<div id="header-logo1">
+					<img src="Images/logo/logo2.png">
+				</div>
+				<div id="header-logo2">
+					<img src="Images/logo/logo4.png" style="height: 30px;">
+				</div>
+			</a>
+		</div>
+		<div id="nav-container">
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<a href="vehicles.html">VEHICLES</a>
+					</li>
+					<li>
+						<a href="services.html">SERVICES</a>
+					</li>
+					<li>
+						<a href="employees.html" style="color: #EB0A1D;">EMPLOYEES</a>
+					</li>
+					<li>
+						<a href="about.html">ABOUT</a>
+					</li>
+					<li>
+						<a href="loginpage.html">LOG IN</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="employBG">
+		<img src="Images/employees/Executives-business-concept-image.jpg">
+	</div>
+	<div class="container" id="employee-container">
+		<div id="employee-title">
+			<h1>OUR TEAM</h1>
+			<p>These are the people that leads our company.</p>
+		</div>
+	<div class="container" id="org-chart"> 
+		<div id="ceo">
+			<h4><b>Chief Executive Officer</b></h4>
+			<img src="Images/employees/Aaron.jpg">
+			<h5>Aaron Mhar Golosinda</h5>	
+		</div>
+		<div id="coo">
+			<h4><b>Chief Operating Officer</b></h4>
+			<img src="Images/employees/Christian Dave.jpg">
+			<h5>Christian Dave Gabriel</h5>
+		</div>
+		<div id="cfo">
+			<h4><b>Chief Financial Officer</b></h4>
+			<img src="Images/employees/Rejina.jpg">
+			<h5>Rejina Sophia O, Medina</h5>
+		</div>
+		<div id="cmo">
+			<h4><b>Chief Marketing Officer</b></h4>
+			<img src="Images/employees/Nathan.jpg">
+			<h5>Nathaniel Tupaz</h5>
+		</div>
+		<div id="cio">
+			<h4><b>Chief Information Officer</b></h4>
+			<img src="Images/employees/Aleyna.jpg">
+			<h5>Aleyna Dalmacio</h5>
+		</div>
+		<div id="exo">
+			<h4><b>Executive Officer</b></h4>
+			<img src="Images/employees/Rafael.jpg">
+			<h5>Rafael Valencia</h5>
+		</div>
+		<div id="exd">
+			<h4><b>Executive Director</b></h4>
+			<img src="Images/employees/Mirriam.jpg">
+			<h5>Mirriam Curada</h5>
+		</div>
+		<div id="sec">
+			<h4><b>Secretary</b></h4>
+			<img src="Images/employees/Lalaine.jpg">
+			<h5>Mary Lalaine Saludes</h5>
+		</div>
+	</div>
+	<hr width="90%"> 
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#payroll1" id="payrollbtn">See Payroll</button>
+	<div class="modal fade" id="payroll1" role="dialog">
+		<div class="modal-dialog" id="payroll-modal">
+		<!-- Modal content-->
+			<div class="modal-content" id="payroll-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Toyota Motor Corporation Payroll</h4>
+				</div>
+				<div class="modal-body">
+					<div id="payroll-container">
+						<div id="payroll" name="payroll">
+							<div name="employee-info" id="employee-info">
+							<h1>TOYOTA</h1>
+							<h1>Payroll System</h1>
+							<table>
+								<tr>
+								<td>
+									<form>
+									<input type="text" id="employeeName" name="employeeName">
+									</form>
+								</td>
+								<td>Name of Employees</td>
+								<td>:<output name="eName" id="eName"></output></td>
+								</tr>
+								<tr>
+								<td>
+									<form>
+									<input type="number" id="dailySalary" name="dailySalary">
+									</form>
+								</td>
+								<td>DAILY SALARY</td>
+								<td>:Php <output name="eDSalary" id="eDSalary"></output></td>
+								</tr>
+								<tr>
+								<td>
+									<form>
+									<input type="number" id="daysOfWork" name="daysOfWork">
+									</form>
+								</td>
+								<td>Days of Work</td>
+								<td>:<output name="eDays" id="eDays"></output></td>
+								</tr>	
+								<tr>
+								<td>
+									<form>
+									<input type="number" id="allowance" name="allowance" value="500" disabled>
+									</form>
+								</td>
+								<td>Allowance per month</td>
+								<td>:Php <output name="eAllow" id="eAllow"></output></td>
+								</tr>	
+								<tr>
+								<td></td>
+								<td>Total Salary</td>
+								<td>:Php <output id="tSalary" name="tSalary"></output></td>
+								</tr>
+								
+							</table>
+							<br>
+							</div>
+							<hr width="80%">
+							<div id="deduction-color">
+							<div name="deductions" id="deductions">
+							<h2>DEDUCTIONS</h2>
+							<table>
+								<tr>
+								<td>
+									<form>
+									<input type="number" id="sss" name="sss">
+									</form>
+								</td>
+								<td>SSS</td>
+								<td>:Php <output id="eSSS" name="eSSS"></output></td>
+								</tr>
+								<tr>
+								<td>
+									<form>
+									<input type="number" id="bir" name="bir">
+									</form>
+								</td>
+								<td>BIR</td>
+								<td>:Php <output id="eBir" name="eBir"></output></td>
+								</tr>
+								<tr>
+								<td>
+									<form>
+									<input type="number" id="pagIbig" name="pagIbig" value="100" disabled>
+									</form>
+								</td>
+								<td>Pag-ibig</td>
+								<td>:Php <output id="ePag" name="ePag"></output></td>
+								<td>
+									<button id="payroll-button" onclick="payrollFunction()">Submit</button>
+								</td>
+								</tr>
+							</table>
+							<br>
+							</div>
+							<hr width="80%">
+							<div name="total" id="total">
+							<table>
+								<tr>				
+								<td>TOTAL DEDUCTION</td>
+								<td>:Php <output id="tDed" name="tDed"></output></td>
+								</tr>
+								<tr>
+								<td>NET PAY</td>
+								<td>:Php <output id="netPay" name="netPay"></output></td>					
+								</tr>
+								<tr>
+								<td></td>
+								<td>
+									<form>
+									<button id="payroll-button" onclick="window.print()">Print</button>
+									</form>
+								</td>
+								</tr>
+							</table>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #EB0A1D; color: white;">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container" id="socials-container">
+				<a href="index.html"><img src="Images/logo/TMP Logo.png"></a> <br>
+			<span id="socials">
+				<a href="https://www.facebook.com/ToyotaMotorPhilippines" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+				<a href="https://www.instagram.com/toyotamotorphilippines/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UC5rnxQeDpMnyCZD8KH7cZMA" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+				<a href="https://twitter.com/ToyotaMotorPH" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+			</span>
+		</div>
+		<div class="container" id="contacts-container">
+			<h1>Customer Contact Center</h1>
+			<div class="container-fluid" id="office-address">
+				<div class="container" id="head-office-address">
+					<p>
+						<i class="fa-solid fa-location-dot" style="font-size: 25px; vertical-align: middle;"></i> 
+						<strong>Head Office</strong>
+					</p>
+					<p>
+						Toyota Special Economic Zone<br>
+						Santa Rosa-Tagaytay Highway<br>
+						Sta Rosa City<br>
+						Laguna 4026<br>
+					</p>
+				</div>
+				<div class="container" id="makati-office-address">
+					<p>
+						<i class="fa-solid fa-location-dot" style="font-size: 25px; vertical-align: middle;"></i> 
+						<strong>Makati Office</strong>
+					</p>
+					<p>
+						31/F GT Tower International <br>
+						6813 Ayala Ave., <br>
+						Salcedo Village <br>
+					</p>
+				</div>
+				<div class="container" id="contact-info">
+					<p><strong>Customer Assistance Center</strong></p>
+					<p>
+						<i class="fa-solid fa-phone" style="font-size: 25px; vertical-align: middle;"></i> Tel: <a href="tel:(02) 819-2912">(02) 8819-2912</a><br>
+						<i class="fa-solid fa-envelope" style="font-size: 25px; vertical-align: middle;"></i> Email: <a href="mailto:customerassistance@toyota.com.ph">customerassistance@toyota.com.ph</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

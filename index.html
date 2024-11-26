@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="Images/logo/logo.png">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  	<script src="bootstrap/jquery.min.js"></script>
+  	<script src="bootstrap/bootstrap2.min.js"></script>
+	  <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/fontawesome.css">
+	  <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/solid.css">
+	  <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/brands.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Toyota - Home</title>
+</head>
+<body>
+	<div id="header">
+		<div id="header-logo">
+			<a href="index.html">
+				<div id="header-logo1">
+					<img src="Images/logo/logo2.png">
+				</div>
+				<div id="header-logo2">
+					<img src="Images/logo/logo4.png" style="height: 30px;">
+				</div>
+			</a>
+		</div>
+		<div id="nav-container">
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="vehicles.html">VEHICLES</a>
+					</li>
+					<li>
+						<a href="services.html">SERVICES</a>
+					</li>
+					<li>
+						<a href="employees.html">EMPLOYEES</a>
+					</li>
+					<li>
+						<a href="about.html">ABOUT</a>
+					</li>
+					<li>
+						<a href="loginpage.html">LOG IN</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="carousel-container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+		  	<!-- Indicators -->
+		  	<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+		 	 </ol>
+	  
+		 	<!-- Wrapper for slides -->
+		 	<div class="carousel-inner" id="slides">
+	  
+				<div class="item active">
+			  		<video id="slide1vid"  style="width:100;" controls autoplay loop>
+				  		<source src="videos/GR Supra A-91 CF 2022(clip).mp4" type="video/mp4">
+						<source src="videos/GR Supra A-91 CF 2022(clip).ogg" type="video/ogg">
+			  		</video>
+					<audio id="slide1audio" controls>
+						<source src="audios/SUPRA MK4 Stage2 BODYKIT by hycade.mp3">
+					</audio>
+				</div>
+	  
+				<div class="item">
+			  		<img src="Images/cars/GR SUPRA.png" style="width:100;" id="slide-images">
+					<audio id="slide2audio" controls>
+						<source src="audios/AllNew 2023 Toyota Crown Toyota.mp3">
+					</audio>
+				</div>
+		  
+				<div class="item">
+					<img src="Images/cars/GR YARIS.png" style="width:100;" id="slide-images">
+					<audio id="slide3audio" controls>
+						<source src="audios/FirstEver GR Corolla Toyota.mp3">
+					</audio>
+				</div>
+			
+				<div class="item">
+					<img src="Images/cars/FORTUNER-GR-S.png" style="width:100;" id="slide-images">
+					<audio id="slide4audio" controls>
+						<source src="audios/TOYOTA HighlanderGasoline Forever Calm Always Bold Toyota.mp3">
+					</audio>
+				</div>
+			
+				<div class="item">
+					<img src="Images/cars/HILUX-GR.png" style="width:100;" id="slide-images">
+					<audio id="slide5audio" controls>
+						<source src="audios//The powertrain inspired by TNGAJPN Toyota.mp3">
+					</audio>
+				</div>
+		  	</div>
+	  
+		  	<!-- Left and right controls -->
+		  	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span id="control">&#8249;</span>
+				<span class="sr-only">Previous</span>
+		  	</a>
+		  	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span id="control">&#8250;</span>
+				<span class="sr-only">Next</span>
+		  	</a>
+		</div>
+	</div>
+	<div id="divider">
+		<div id="title">
+			<h1>Featured Articles</h1>
+		</div>
+	</div>
+	<div id="articles-container">
+		<ul id="articles">
+			<li>
+				<div id="articleWidget">
+					<img src="Images/articles/Lakbay-Kuwentuhan (1).jpg">
+					<h3>All-New Toyota Lite Ace delivers books to children as Lakbay-Kuwentuhan’s mobility partner</h3>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#article1" id="readmorebtn">Read More</button>
+					<div class="modal fade" id="article1" role="dialog">
+						<div class="modal-dialog" id="article-modal">
+						<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header" id="article-head">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">All-New Toyota Lite Ace delivers books to children as Lakbay-Kuwentuhan’s mobility partner</h4>
+								</div>
+								<div class="modal-body" id="article-body">
+									<img src="Images/articles/Lakbay-Kuwentuhan (1).jpg">
+									<p>
+										Championing efforts to improve the quality of life of Filipinos through the power of mobility, Toyota Motor
+										Philippines (TMP), the country’s leading mobility company, teamed up with local children’s bookstore
+										Basa Bookstore for its educational campaign and storytelling caravan Lakbay-Kuwentuhan.
+									</p>
+									<p>
+										Manila, Philippines, April 17, 2023 – Championing efforts to improve the quality of life of Filipinos through
+										the power of mobility, Toyota Motor Philippines (TMP), the country’s leading mobility company, teamed
+										up with local children’s bookstore Basa Bookstore for its educational campaign and storytelling caravan
+										Lakbay-Kuwentuhan.
+									</p>    
+									<p>    
+										Basa Bookstore toured different provinces with the All-New Toyota Lite Ace Panel Van to deliver
+										storybooks to children for the first leg of their Lakbay Kuwentuhan caravan.
+									</p>
+									<p>
+										An initiative by Basa Bookstore to celebrate International Book Giving Day last month, Lakbay-
+										Kuwentuhan hopes to raise awareness about the importance of education among Filipino children and
+										encourage them to read by distributing locally published books. The campaign aims to give away 5,000
+										books to public schools, reach 10,000 students, and facilitate 20 storytelling workshops for 1,000 public
+										school teachers across the Philippines in 2023 alone.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #EB0A1D; color: white;">Close</button>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="articleWidget">
+					<img src="Images/articles/Have fun in the sun this summer with hot deals from Toyota.jpg">
+					<h3>Toyota Motor Philippines is bringing in the heat this April with deals coming in hot!</h3>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#article2" id="readmorebtn">Read More</button>
+					<div class="modal fade" id="article2" role="dialog">
+						<div class="modal-dialog" id="article-modal">
+						<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header" id="article-head">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Toyota Motor Philippines is bringing in the heat this April with deals coming in hot!</h4>
+								</div>
+								<div class="modal-body" id="article-body">
+									<img src="Images/articles/Have fun in the sun this summer with hot deals from Toyota.jpg">
+									<p>
+										From April 7 to 30, customers can enjoy low monthly plans, trade-in rebates,
+										and more when they purchase a brand-new Toyota from any authorized dealer nationwide. With a new
+										vehicle for the summer, each trip is sure to be a memorable one.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #EB0A1D; color: white;">Close</button>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="articleWidget">
+					<img src="Images/articles/Toyota offers motorist assistance for Holy Week.jpg">
+					<h3>The roads will be seeing more vehicles in the coming days as Filipinos travel for the Holy Week break</h3>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#article3" id="readmorebtn">Read More</button>
+					<div class="modal fade" id="article3" role="dialog">
+						<div class="modal-dialog" id="article-modal">
+						<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header" id="article-head">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">The roads will be seeing more vehicles in the coming days as Filipinos travel for the Holy Week break.</h4>
+								</div>
+								<div class="modal-body" id="article-body">
+									<img src="Images/articles/Toyota offers motorist assistance for Holy Week.jpg">
+									<p>
+										To help motorists safely navigate their way to their
+										destinations, mobility leader Toyota Motor Philippines (TMP) is offering a free pre-Holy Week vehicle
+										safety inspection service.
+									</p>
+									<p>
+										Motorists can avail of a free 21-point Vehicle Safety Inspection at any authorized Toyota Dealer and
+										Service Center (excluding Body & Paint Centers) nationwide until April 5. Toyota owners can set an
+										appointment by contacting their preferred dealer or service center. To find a dealer or service center near
+										them, they can go to toyota.com.ph/dealer.
+									</p>    
+									<p>    
+										The inspection includes a checkup of the tires, windshield wipers, brake fluids, drive belts, engine oil,
+										coolant, battery, and more.
+									</p>
+									<p>
+										Toyota owners who will bring in their vehicle for checking will also receive a free Caltex Saveplus Card
+										when they avail of additional services. This card can be used to get a fuel discount of P2.00 per liter for
+										Gasoline (Platinum or Silver) or P1.00 per liter for Diesel at all card-accepting Caltex stations nationwide
+										(except Caltex stations located in Landers Superstores).
+									</p>
+									<p>
+										Additional services that can be availed include but are not limited to Preventive Maintenance check-up,
+										General Service repair, Aircare, Engine Detailing, and Body and Paint repairs.	
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #EB0A1D; color: white;">Close</button>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="articleWidget">
+					<img src="Images/articles/Toyota Motor Philippines receives national and provincial recognitions for tax contributions.jpg">
+					<h3>Toyota Motor Philippines receives national and provincial recognitions for tax contributions</h3>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#article4" id="readmorebtn">Read More</button>
+					<div class="modal fade" id="article4" role="dialog">
+						<div class="modal-dialog" id="article-modal">
+						<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header" id="article-head">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Toyota Motor Philippines receives national and provincial recognitions for tax contributions</h4>
+								</div>
+								<div class="modal-body" id="article-body">
+									<img src="Images/articles/Toyota Motor Philippines receives national and provincial recognitions for tax contributions.jpg">
+									<p>
+										Toyota Motor Philippines Corporation (TMP) receives recognitions by the Bureau of Customs (BOC) and
+										Provincial Government of Laguna as the country’s third top importer and revenue contributor for the year
+										2022 and Laguna’s ‘Outstanding Taxpayer 2023,’ respectively.
+									</p>
+									<p>
+										The largest automotive and mobility company in the Philippines remitted a total of PHP34.59 billion in
+										duties and taxes, contributing to the BOC’s positive collection performance for the period January to
+										December 2022.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #EB0A1D; color: white;">Close</button>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</li>
+			
+		</ul>
+		
+	</div>
+	<div class="footer">
+		<div class="container" id="socials-container">
+				<a href="#"><img src="Images/logo/TMP Logo.png"></a> <br>
+			<span id="socials">
+				<a href="https://www.facebook.com/ToyotaMotorPhilippines" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+				<a href="https://www.instagram.com/toyotamotorphilippines/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UC5rnxQeDpMnyCZD8KH7cZMA" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+				<a href="https://twitter.com/ToyotaMotorPH" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+			</span>
+		</div>
+		<div class="container" id="contacts-container">
+			<h1>Customer Contact Center</h1>
+			<div class="container-fluid" id="office-address">
+				<div class="container" id="head-office-address">
+					<p>
+						<i class="fa-solid fa-location-dot" style="font-size: 25px; vertical-align: middle;"></i> 
+						<strong>Head Office</strong>
+					</p>
+					<p>
+						Toyota Special Economic Zone<br>
+						Santa Rosa-Tagaytay Highway<br>
+						Sta Rosa City<br>
+						Laguna 4026<br>
+					</p>
+				</div>
+				<div class="container" id="makati-office-address">
+					<p>
+						<i class="fa-solid fa-location-dot" style="font-size: 25px; vertical-align: middle;"></i> 
+						<strong>Makati Office</strong>
+					</p>
+					<p>
+						31/F GT Tower International <br>
+						6813 Ayala Ave., <br>
+						Salcedo Village <br>
+					</p>
+				</div>
+				<div class="container" id="contact-info">
+					<p><strong>Customer Assistance Center</strong></p>
+					<p>
+						<i class="fa-solid fa-phone" style="font-size: 25px; vertical-align: middle;"></i> Tel: <a href="tel:(02) 819-2912">(02) 8819-2912</a><br>
+						<i class="fa-solid fa-envelope" style="font-size: 25px; vertical-align: middle;"></i> Email: <a href="mailto:customerassistance@toyota.com.ph">customerassistance@toyota.com.ph</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

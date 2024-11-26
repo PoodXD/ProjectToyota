@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+	font-family: Verdana;
+}
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #0B032D;
+	margin: 0;
+}
+#login {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+#login-container {
+	box-sizing: border-box;
+	background-color: white;
+	max-width: 400px;
+	margin: 7% auto 0;
+	box-shadow: 5px 5px #EB0A1D;
+	transition: 0.5s;
+	border-radius: 10px;
+	animation: loginAnimate 1s ease-out ;
+}
+#login-container:hover {
+	box-shadow: 5px 5px #0AEBC5;
+}
+#login-container:hover img {
+	opacity: 1;
+	padding-right: 5px;
+	margin-left: 0px;
+}
+#login-container img {
+	opacity: 0;
+	height: 40px;
+	padding-right: 10px;
+	margin-left: -5px;
+	vertical-align: middle;
+	transition: 0.25s;
+}
+#login-container h3 {
+	text-align: left;
+	padding: 30px 0px 0px 45px;
+}
+#login-input {
+	width: 100%;
+	padding: 10px 25px 20px 25px;
+	box-sizing: border-box;
+}
+#login-email {
+	width: 100%;
+	margin: 0 auto 5px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#login-email input {
+	width: 100%;
+	padding:5px;
+	box-sizing: border-box;
+	border-radius: 9px;
+	border-style: solid;
+	border-width: 2px;
+	transition: .25s;
+}
+#login-email input:focus {
+	border-radius: 4.5px;
+}
+#login-password {
+	width: 100%;
+	margin: 0 auto 5px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#login-password input {
+	width: 100%;
+	padding:5px;
+	box-sizing: border-box;
+	border-radius: 9px;
+	border-style: solid;
+	border-width: 1px;
+	transition: .25s;
+}
+#login-password input:focus {
+	border-radius: 4.5px;
+}
+#login-submit {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#login-submit input {
+	width: 100%;
+	margin: auto 0;
+	background-color: #EB0A1D;
+	border-style: none;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 10px;
+	display: block;
+	color: white;
+	transition: .10s;
+}
+#login-submit input:hover {
+	background-color: #af0a18;
+	cursor: pointer;
+}
+#login-submit input:active {
+	box-shadow: 0px 2px 5px black inset;
+} 
+#time-container {
+	position: relative;
+	width: 105%;
+	height: 50px;
+	padding: 7px;
+	opacity: 1;
+	text-align: center;
+	animation: time 2s ease-in;
+}
+#divider {
+	text-align: center;
+	padding-left: 0px;
+	animation: divider 2s ease-in-out;
+}
+#divider hr {
+	color: #EB0A1D;
+}
+#submit {
+	margin-left: 43%;
+}
+@keyframes time {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes divider {
+	from {
+		width: 10%;
+		opacity: 0;
+		padding-left: 250px;
+	}
+	to {
+		padding-left: 0px;
+		width: 100%;
+		opacity: 1;
+	}
+}
+@keyframes loginAnimate {
+	from {
+		margin-top: 5%;
+		opacity: 0;
+	}
+	to {
+		margin-top: 7%;
+		opacity: 1;
+	}
+}

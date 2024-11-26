@@ -1,0 +1,116 @@
+/* Vehicles Page */
+#cars {
+    width: 100%;
+    padding-left: 0;
+    background-color: white;
+    padding-bottom: 10%;
+}
+#cars  h1 {
+    font-weight: 900;
+    letter-spacing: 50px;
+    color: #EB0A1D;
+    text-align: center;
+}
+#carsBG  {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+#carsBG img {
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    margin-top: 80px;
+}
+#vehicle-title {
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+#vehicle-title p {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: larger;
+}
+/* Accordion of cars */
+#accordion {
+    padding-left: 15px;
+}
+#accordionOfCars  {
+    border-radius: 10px;
+    transition: 0.25s ease-out;
+    margin: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#accordionHead {
+    background-color: #EB0A1D;
+    border: solid 1px #EB0A1D;
+    border-radius: 0px;
+    transition: 0.25s ease-out;
+}
+#accordionHead > h4 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    transition: 0.25s ease-out;
+    color: rgb(255, 255, 255);
+}
+#accordionHead:hover {
+    background-color: #b90716;
+}
+#accordionOfCars:hover #accordionHead > h4  {
+    color: white;
+}
+.list-group {
+    margin-bottom: 0px;
+}
+/* vehicles modals */
+#carsbtn {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+#carsbtn li {
+    transition: 0.25s ease-in-out;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+#carsbtn:hover li{
+    background-color: #ff9fa7;
+}
+#vehicle-modal {
+    width: 60%;
+}
+#vehicle-head {
+    border-bottom: solid 5px #EB0A1D;
+    color: #EB0A1D;
+}
+#vehicle-head h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 4px;
+}
+#vehicle-body {
+    margin-bottom: 50px;
+}
+#vehicle-body img {
+    width: 100%;
+}
+#vehicle-body p {
+    margin-left: 100px;
+    padding-left: 10px;
+    font-size: 15px;
+    border-left: solid 5px #EB0A1D;
+    transition: 0.25s ease-in-out;
+}
+#vehicle-body p:hover {
+    border-left: solid 20px #EB0A1D;
+    font-size: 20px;
+}

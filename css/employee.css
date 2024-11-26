@@ -1,0 +1,165 @@
+#employBG  {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+#employBG img {
+    position: fixed;
+    top: -300px;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    margin-top: 80px;
+}
+#employee-title {
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+#employee-title  h1 {
+    font-weight: 900;
+    letter-spacing: 40px;
+    color: #EB0A1D;
+    text-align: center;
+}
+#employee-title p {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: larger;
+}
+
+#employee-container {
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+}
+/* PAyroll */
+#payrollbtn {
+    background-color: #EB0A1D;
+    width: 10%;
+    margin: 2% 45% 2% 45%;
+    border: none;
+    border-radius: 20px;
+    transition: 0.25s ease-in-out;
+}
+#payrollbtn:hover {
+    background-color: #aa0714;
+}
+#payroll-modal {
+    width: 40%;
+}
+#payroll-container {
+    margin-left: 10%;
+    width: 80%;
+    height: 70%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    bottom: 10%;
+    left: 10%;
+}
+#payroll output {
+    text-align: right;
+}
+#deduction-color {
+    color: #000000;
+}
+#payroll-button {
+    color: rgb(0, 0, 0);
+
+}
+#payroll-button:hover {
+    background-color: #000000;
+    color: #F6F1F1;
+}
+#title {
+    text-align: center;
+}
+#employee-info h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+#deductions h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+table td {
+    padding: 5px;
+    width: 20%;
+    vertical-align: top;
+}
+
+#tSalary {
+    position: relative;
+    float: right;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+    }
+    #payroll-container, #payroll-container * {
+        visibility: visible;
+        position: relative;
+        border: none;
+    }
+    #payroll-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #payroll {
+        width: 600px;
+    }
+    #payroll-button {
+        display: none;
+    }
+    #payroll input {
+        visibility: hidden;
+    }
+}
+
+/* organizational chart */
+#org-chart {
+    width: 65%;
+    clear: both;
+}
+#org-chart div {
+    width: 40%;
+    height: 600px;
+    float: left;
+    margin: 30px 5% 30px 5%;
+    overflow: hidden;
+    border: solid 0px #000000;
+    box-shadow: 0px 0px #EB0A1D;
+    transition: 0.25s ease-in-out;
+}
+#org-chart div:hover h4 {
+    border-bottom: solid 5px #EB0A1D;
+}
+#org-chart div img {
+    width: 90%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 0 5% 30px 5%;
+    padding: 20px 0 0px 0;
+}
+#org-chart h4 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: solid 1px #EB0A1D;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+#org-chart h5 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+

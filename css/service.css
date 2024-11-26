@@ -1,0 +1,128 @@
+#serviceBG  {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+#serviceBG img {
+    position: fixed;
+    top: -120px;
+    width: 100%;
+    z-index: -2;
+    overflow: hidden;
+    margin-top: 80px;
+}
+#service-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#service-title  h1 {
+    font-weight: 900;
+    letter-spacing: 30px;
+    color: #EB0A1D;
+    text-align: center;
+}
+#service-title p {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: larger;
+}
+#service-container {
+	background-color: #ffffff;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0;
+    padding-bottom: 200px;
+	box-sizing: border-box;
+}
+#service {
+	margin: 100px;
+	margin-top: 50px;
+	left: 0%;
+	padding-left: 0px;
+}
+#serviceWidget {
+	width: 50%;
+	height: 600px;
+	float: left;
+	position: relative;
+	margin-left: 0;
+	text-align: justify;
+	background-color: white;
+	overflow: hidden;
+	border: 0px #EB0A1D;
+	transition: 0.35s ease-in-out;
+	border-left: 0px solid black;
+}
+#serviceWidget:hover {
+	border-left: 25px solid #EB0A1D;
+}
+#service li div h3 {
+	background-color: rgba(0, 0, 0, 0.507);
+	color: white;
+	padding: 20px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-size: large;
+	letter-spacing: 3px;
+	position: absolute;
+	bottom: 0;
+	transition: 0.25s ease-in;
+}
+
+#serviceWidget > img{
+	height: 110%;
+	z-index: 0;
+	position: absolute;
+	object-position: center;
+	transition: transform 0.5s ease-in-out;
+}
+#service li div:hover #service li div > img{
+	transform: scale(1.1);
+}
+#service-modal {
+    width: 1000px;
+}
+#service-head {
+	text-align: center;
+}
+#service-head h4 {
+	font-size: 20px;
+	font-weight: 900;
+}
+#service-body img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+#service-body p, #service-body li {
+    font-size: large;
+	margin: 20px;
+}
+#service-body b {
+    color: #EB0A1D;
+}
+#readmorebtn {
+	position: absolute;
+    object-position: center;
+	width: 200px;
+	opacity: 0;
+	transition: 0.25s ease-in;
+	background-color: #EB0A1D;
+	color: white;
+	border: none;
+	border-radius: 20px;
+}
+#readmorebtn:hover {
+	background-color: #c70818;
+}
+#service li div:hover #readmorebtn {
+	opacity: 1;
+}
+
+#service li div:hover h3 {
+	background-color:  #EB0A1D;
+}
